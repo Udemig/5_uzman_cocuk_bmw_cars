@@ -1,0 +1,16 @@
+@import './variables';
+@import './modules';
+@import './mediaqueries';
+
+#interior{
+    @extend %design;
+    background-image: radial-gradient(rgba(0,0,0,0.5), black),
+    url('../images/bmw-banner.jpeg');
+    // ./ aynı dizini temsil eder, ../ bir üst klasöre çık orada ara demek
+    p{
+        font-size: 20px;
+        @include mobile{
+            font-size: 15px;
+        }
+    }
+}
